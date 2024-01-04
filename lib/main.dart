@@ -76,8 +76,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),)
                 ],
               ),
-              // ListView()
-              ItemCard(image: '1', namaItem: 'Organic Bananas', price: 4.99, qty: 2,)
+              Expanded(
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    ItemCard(image: '1', namaItem: 'Organic Bananas', price: 4.99, qty: 2,),
+                    ItemCard(image: '1', namaItem: 'Organic Bananas', price: 4.99, qty: 2,)
+
+                  ],
+                ),
+              )
             ],
           ),
         ),
